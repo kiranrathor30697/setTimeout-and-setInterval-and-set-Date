@@ -1,0 +1,38 @@
+<script>
+
+    //let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)
+
+
+     let test = (a,b)=>{
+            console.log(a+","+b)
+        }
+        let myFunc = setTimeout(test,2000,"Kiran",'Rathor');
+        console.log(myFunc);
+
+        let timerId = setTimeout(() => consol("never happens"), 5000);
+        console.log(timerId); // timer identifier
+
+        clearTimeout(timerId);
+        //alert(timerId);
+
+        let n = setTimeout(my,3000);
+        
+        let x = [1,4,6,3];
+        let a = ""
+
+        function my(){
+            console.log("okokoko");
+            
+            for(let i=0;i<x.length;i++){
+                a+= x[i];
+            }      
+        }
+            //clearTimeout(n);
+
+        let mydate = setTimeout(myDate,1000);
+
+        function myDate(){
+            time = new Date();
+            console.log(time.getHours());
+        }
+</script>

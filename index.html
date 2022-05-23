@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body>
+    
+
+    <script>
+        let test = (a,b)=>{
+            console.log(a+","+b)
+        }
+        let myFunc = setTimeout(test,2000,"Kiran",'Rathor');
+        console.log(myFunc);
+
+        let timerId = setTimeout(() => consol("never happens"), 5000);
+        console.log(timerId); // timer identifier
+
+        clearTimeout(timerId);
+        //alert(timerId);
+
+        let n = setTimeout(my,3000);
+        
+        let x = [1,4,6,3];
+        let a = ""
+
+        function my(){
+            console.log("okokoko");
+            
+            for(let i=0;i<x.length;i++){
+                a+= x[i];
+            }      
+        }
+            //clearTimeout(a);
+
+            let n1 = setInterval(my1,3000);
+
+            function my1(){
+                console.log("my interval method ")
+            }
+    </script>
+</body>
+</html>
